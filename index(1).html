@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Happy Birthday Bhaiyu 💜</title>
+<style>
+*{box-sizing:border-box} body{margin:0;min-height:100vh;font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:radial-gradient(circle at top,#3c2162,#120b1d 65%);color:#fff;display:flex;align-items:center;justify-content:center;padding:24px;overflow:hidden}
+body:before,body:after{content:"";position:fixed;width:220px;height:220px;border-radius:50%;filter:blur(60px);opacity:.35}.body:before{background:#b66cff}
+.card{width:min(520px,100%);padding:34px 24px;border:1px solid #ffffff25;border-radius:28px;background:#ffffff10;backdrop-filter:blur(14px);box-shadow:0 20px 70px #0008;text-align:center;position:relative}
+.stars{position:fixed;inset:0;pointer-events:none;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:38px 38px;opacity:.16}
+h1{font-size:clamp(30px,8vw,52px);line-height:1.05;margin:8px 0 14px} p{color:#eee;line-height:1.7;font-size:16px}.cake{font-size:70px;margin:8px}.btn{border:0;border-radius:999px;padding:15px 25px;background:#c58cff;color:#180b25;font-size:16px;font-weight:800;cursor:pointer;box-shadow:0 8px 30px #b56cff55}.hidden{display:none;margin-top:24px;padding:20px;border-radius:20px;background:#ffffff0d;border:1px solid #ffffff18}.heart{position:fixed;bottom:-30px;font-size:20px;animation:float 6s linear infinite;opacity:.7}@keyframes float{to{transform:translateY(-110vh) rotate(20deg);opacity:0}}small{opacity:.6}
+</style>
+</head>
+<body>
+<div class="stars"></div>
+<div class="card">
+<div class="cake">🎂</div>
+<h1>Happy Birthday<br>Busy Rahe Ne Wale Bhaiyu 💜</h1>
+<p>Okay okay… itni busy life mein birthday ke liye thoda time toh banta hai 👀</p>
+<button class="btn" onclick="openWish()">Okay okay, open it 🎁</button>
+<div id="wish" class="hidden">
+<h2>For My Bhaiyu 💜</h2>
+<p>Happy Birthdayyy! 🥳💜<br><br>
+Aap hamesha khush raho, healthy raho aur life mein jo bhi chaho woh achieve karo. 
+Aur haan… thoda kam busy raha karo 😭😂<br><br>
+Thank you for being my bhai. Have the best birthday! ✨</p>
+<p>🎈🎂💜✨</p>
+</div>
+<small>Made with 💜 specially for Bhaiyu</small>
+</div>
+<script>
+function openWish(){document.getElementById('wish').style.display='block';document.querySelector('.btn').textContent='Birthday surprise unlocked 💜';}
+for(let i=0;i<14;i++){let h=document.createElement('div');h.className='heart';h.textContent=i%2?'💜':'✨';h.style.left=Math.random()*100+'vw';h.style.animationDelay=Math.random()*5+'s';document.body.appendChild(h);}
+</script>
+</body>
+</html>
